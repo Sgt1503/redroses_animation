@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div>
+          <img class="" id="img" :src="generatedUrl" />
+        </div>
+        <div class="vertical-line"></div>
+        <div class="img-wrapper">
+          <div class="item" id="who">
+            <p v-if="response.botFollower">
+              <span>ВЫИГРАЛ:</span> {{response.botFollower.username}}
+            </p>
+          </div>
+          <div class="item" id="what">
+            <p v-if="response.botFollower">{{response.prize.nameOfPrize}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const app = Vue.createApp({
+      data() {
+        return {
+          generatedUrl:'#',
+          json: {},
+          response: {},
+        };
+      },
+      
+      mounted() {
+        // Осюда запускаются скрипты
+
+        const weaponImage = document.querySelector("#img");
+        const whoWon = document.querySelector("#who");
+        const whatPrize = document.querySelector("#what");
+        const verticalLine = document.querySelector(".vertical-line");
+        const giveInterval = 10;
+
+        function showAll() {
+          weaponImage.classList.add("img");
+          whoWon.classList.add("who");
+          whatPrize.classList.add("what");
+          verticalLine.classList.add("line");
+        }
+
+        function hideAll() {
+          weaponImage.classList.remove("img");
+          whoWon.classList.remove("who");
+          whatPrize.classList.remove("what");
+          verticalLine.classList.remove("line");
+        }
+        function doAnimation() {
+          showAll();
+          setTimeout(() => {
+            hideAll();
+          }, 2000);
+        }
+
+        {
+          fetch("http://178.154.224.215:8082/raffle/getWinner", {
+            mode: "cors",
+          })
+            .then((response) => response.json())
+            .then((json) => {
+              console.log(json);
+              if (JSON.stringify(this.response) == JSON.stringify(json)) {
+                return;
+              }
+              this.response = json;
+              this.generatedUrl = this.response.prize.urlToPng;
+              doAnimation();
+            });
+        }
+
+        setInterval(() => {
+          fetch("http://178.154.224.215:8082/raffle/getWinner", {
+            mode: "cors",
+          })
+            .then((response) => response.json())
+            .then((json) => {
+              if (JSON.stringify(this.response) == JSON.stringify(json)) {
+                return;
+              }
+              this.generatedUrl = this.response.prize.urlToPng;
+              this.response = json;
+              doAnimation();
+            });
+        }, giveInterval * 1000);
+
+        // конец скриптов
+      },
+    });
+
+    app.mount("#app");
+  </script>
+  <style>
+    body {
+      background-color: transparent;
+      font-family: Montserrat;
+    }
+    .container {
+      display: flex;
+      background-color: black;
+      opacity: 0.8;
+      width: 325px;
+      height: 130px;
+      color: white;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 10px;
+    }
+    .vertical-line {
+      height: 100px;
+      background-color: rgb(100, 30, 41);
+      width: 5px;
+      border-radius: 10px;
+    }
+    img {
+      position: relative;
+      width: 100px;
+      margin: 10px;
+    }
+    .item {
+      width: 200px;
+      height: 50px;
+      background-color: transparent;
+      text-align: center;
+      vertical-align: middle;
+      padding: auto;
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .img-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .who {
+      animation: appear-top 1s;
+    }
+    .what {
+      animation: appear-bottom 1s;
+    }
+    .img {
+      animation: appear-img 1s;
+    }
+    .line {
+      animation: appear 1s;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes appear-img {
+      from {
+        opacity: 0;
+        left: 200px;
+      }
+
+      to {
+        opacity: 1;
+        left: 0px;
+      }
+    }
+    @keyframes appear-top {
+      from {
+        opacity: 0;
+        top: 100px;
+      }
+
+      to {
+        opacity: 1;
+        top: 0px;
+      }
+    }
+    @keyframes appear-bottom {
+      from {
+        opacity: 0;
+        bottom: 100px;
+      }
+      to {
+        opacity: 1;
+        bottom: 0px;
+      }
+    }
+  </style>
+</html>
