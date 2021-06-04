@@ -27,10 +27,7 @@ public class WinnerServiceImpl implements WinnerService {
         return winnerRepo.save(winner);
     }
 
-    @Override
-    public Winner getWinnerByFollower(BotFollower follower) {
-        return winnerRepo.findByBotFollower_SteamID(follower.getUserID());
-    }
+
 
     @Override
     public Winner getLastWinner() {

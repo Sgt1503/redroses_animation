@@ -12,7 +12,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @DynamicInsert
 @DynamicUpdate
-@Table(name = "BotFollower")
+@Table(name = "bot_follower")
 public class BotFollower {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,16 +28,16 @@ public class BotFollower {
     private Long abobaCounter;
 
     @Column
-    private String steamID;
+    private String authToken;
 
     @Column
     private Long messageCounter;
 
-    public BotFollower(String username, String userID, Long abobaCounter, String steamID, Long messageCounter) {
+    public BotFollower(String username, String userID, Long abobaCounter, String authToken, Long messageCounter) {
         this.username = username;
         this.userID = userID;
         this.abobaCounter = abobaCounter;
-        this.steamID = steamID;
+        this.authToken = authToken;
         this.messageCounter = messageCounter;
     }
 

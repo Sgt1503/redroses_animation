@@ -20,10 +20,6 @@ public class Winner {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-//    @OneToOne
-//    @JoinColumn(name = "follower_userid")
-//    private Follower follower;
-
     @OneToOne
     @JoinColumn(name = "botfollower_username")
     private BotFollower botFollower;
@@ -31,15 +27,6 @@ public class Winner {
     @OneToOne
     @JoinColumn(name = "prize_nameOfPrize")
     private Prize prize;
-
-    @Column
-    private String username;
-
-    @Column
-    private String urlToPng;
-
-    @Column
-    private String prizeName;
 
 
 
@@ -52,13 +39,5 @@ public class Winner {
     public Winner(BotFollower follower, Prize prize) {
         this.botFollower = follower;
         this.prize = prize;
-    }
-
-    public Winner(BotFollower botFollower, Prize prize, String username, String urlToPng, String prizeName) {
-        this.botFollower = botFollower;
-        this.prize = prize;
-        this.username = username;
-        this.urlToPng = urlToPng;
-        this.prizeName = prizeName;
     }
 }

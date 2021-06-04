@@ -1,10 +1,13 @@
 package ru.sgt1503.redroses_animation;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import ru.sgt1503.redroses_animation.DB.Entity.BotFollower;
+import ru.sgt1503.redroses_animation.DB.Entity.Prize;
 import ru.sgt1503.redroses_animation.DB.Entity.Winner;
 import ru.sgt1503.redroses_animation.DB.Service.BotFollowerService;
+import ru.sgt1503.redroses_animation.DB.Service.Impl.BotFollowerServiceImpl;
 import ru.sgt1503.redroses_animation.DB.Service.PrizeService;
 import ru.sgt1503.redroses_animation.DB.Service.WinnerService;
 
@@ -21,13 +24,12 @@ import static java.util.concurrent.TimeUnit.SECONDS;
  */
 @Component
 public class Raffle {
-
     private BotFollowerService botFollowerService;
     private WinnerService winnerService;
     private PrizeService prizeService;
 
     @Autowired
-    public Raffle(PrizeService prizeService, BotFollowerService botFollowerService, WinnerService winnerService) {
+    public Raffle(BotFollowerService botFollowerService, WinnerService winnerService, PrizeService prizeService) {
         this.botFollowerService = botFollowerService;
         this.winnerService = winnerService;
         this.prizeService = prizeService;
@@ -48,7 +50,6 @@ public class Raffle {
                 BotFollower follower = botFollowerService.getFollowerByUserId(winnerId);
 
                 long maxP = prizeService.count();
-                long minP = 1;
                 Random r = new Random();
                 long prize = r.nextInt((int) maxP) + 1;
                 winnerService.addWinner(new Winner(
@@ -63,7 +64,7 @@ public class Raffle {
             }
         };
         final ScheduledFuture<?> beeperHandle =
-            scheduler.scheduleAtFixedRate(beeper, 1, 6, SECONDS);
+            scheduler.scheduleAtFixedRate(beeper, 1, 600, SECONDS);
         scheduler.schedule(new Runnable() {
             public void run() { beeperHandle.cancel(true); }
         }, 60 * 24, MINUTES);

@@ -10,6 +10,5 @@ import ru.sgt1503.redroses_animation.DB.Entity.Winner;
 @Service
 public interface WinnerService {
     Winner addWinner(Winner winner);
-    Winner getWinnerByFollower(BotFollower follower);
     Winner getLastWinner();
 }

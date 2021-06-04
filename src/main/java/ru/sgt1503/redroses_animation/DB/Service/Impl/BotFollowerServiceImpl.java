@@ -47,7 +47,7 @@ public class BotFollowerServiceImpl implements BotFollowerService {
     public BotFollower editAbobaCounterOfFollower(BotFollower follower) {
         BotFollower followerEdited;
         Long newCount = follower.getAbobaCounter() + 1;
-        followerEdited = new BotFollower(follower.getId(), follower.getUsername(), follower.getUserID(), newCount, follower.getSteamID(), follower.getMessageCounter());
+        followerEdited = new BotFollower(follower.getId(), follower.getUsername(), follower.getUserID(), newCount, follower.getAuthToken(), follower.getMessageCounter());
         follower = followerEdited;
         return botFollowerRepo.save(follower);
     }
@@ -56,7 +56,7 @@ public class BotFollowerServiceImpl implements BotFollowerService {
     public BotFollower editMessageCounterOfFollower(BotFollower follower) {
         BotFollower followerEdited;
         Long newCount = follower.getMessageCounter() + 1;
-        followerEdited = new BotFollower(follower.getId(), follower.getUsername(), follower.getUserID(), follower.getAbobaCounter(), follower.getSteamID(), newCount);
+        followerEdited = new BotFollower(follower.getId(), follower.getUsername(), follower.getUserID(), follower.getAbobaCounter(), follower.getAuthToken(), newCount);
         follower = followerEdited;
         return botFollowerRepo.save(follower);
     }
