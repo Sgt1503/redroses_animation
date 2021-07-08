@@ -17,7 +17,6 @@ import javax.persistence.*;
 @Table(name = "prize")
 public class Prize {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @Column

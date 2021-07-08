@@ -33,4 +33,9 @@ public class PrizeServiceImpl implements PrizeService {
     public Long count() {
         return prizeRepo.count();
     }
+
+    @Override
+    public void deleteLast() {
+        prizeRepo.deleteById(prizeRepo.count());
+    }
 }

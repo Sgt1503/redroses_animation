@@ -49,9 +49,7 @@ public class Raffle {
                 String winnerId = followers.get((int) winner).getUserID();
                 Follower follower = followerService.getFollowerByUserId(winnerId);
 
-                long maxP = prizeService.count();
-                Random r = new Random();
-                long prize = r.nextInt((int) maxP) + 1;
+                long prize = prizeService.count();
                 winnerService.addWinner(new Winner(
                     follower,
                     prizeService.getPrizeById(prize)));
@@ -61,6 +59,7 @@ public class Raffle {
                         prizeService.getPrizeById(prize).getNameOfPrize()
                 );
                 System.out.println(prize);
+                prizeService.deleteLast();
             }
         };
         final ScheduledFuture<?> beeperHandle =

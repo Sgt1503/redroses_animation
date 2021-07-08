@@ -11,4 +11,5 @@ public interface PrizeService {
     Prize getPrizeByName(String name);
     Prize getPrizeById(Long id);
     Long count();
+    void deleteLast();
 }
