@@ -22,7 +22,7 @@ public class Winner {
 
     @OneToOne
     @JoinColumn(name = "botfollower_username")
-    private BotFollower botFollower;
+    private Follower follower;
 
     @OneToOne
     @JoinColumn(name = "prize_nameOfPrize")
@@ -36,8 +36,8 @@ public class Winner {
 //        this.win = win;
 //    }
 
-    public Winner(BotFollower follower, Prize prize) {
-        this.botFollower = follower;
+    public Winner(Follower follower, Prize prize) {
+        this.follower = follower;
         this.prize = prize;
     }
 }
