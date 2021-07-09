@@ -21,7 +21,7 @@ public class Winner {
     private Long id;
 
     @OneToOne
-    @JoinColumn(name = "botfollower_username")
+    @JoinColumn(name = "follower_username")
     private Follower follower;
 
     @OneToOne
