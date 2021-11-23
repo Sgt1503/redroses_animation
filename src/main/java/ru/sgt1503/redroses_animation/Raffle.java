@@ -63,7 +63,7 @@ public class Raffle {
             }
         };
         final ScheduledFuture<?> beeperHandle =
-            scheduler.scheduleAtFixedRate(beeper, 1, 6, SECONDS);
+            scheduler.scheduleAtFixedRate(beeper, 1, 600, SECONDS);
         scheduler.schedule(new Runnable() {
             public void run() { beeperHandle.cancel(true); }
         }, 60 * 24, MINUTES);
