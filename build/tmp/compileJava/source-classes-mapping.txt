@@ -1,0 +1,42 @@
+ru/sgt1503/redroses_animation/DB/Repo/PrizeRepo.java
+ ru.sgt1503.redroses_animation.DB.Repo.PrizeRepo
+ru/sgt1503/redroses_animation/DB/Service/PrizeService.java
+ ru.sgt1503.redroses_animation.DB.Service.PrizeService
+ru/sgt1503/redroses_animation/DB/Service/FollowerService.java
+ ru.sgt1503.redroses_animation.DB.Service.FollowerService
+ru/sgt1503/redroses_animation/DB/Entity/Follower.java
+ ru.sgt1503.redroses_animation.DB.Entity.Follower
+ru/sgt1503/redroses_animation/RedrosesAnimationApplication.java
+ ru.sgt1503.redroses_animation.RedrosesAnimationApplication
+ru/sgt1503/redroses_animation/controller/MainController.java
+ ru.sgt1503.redroses_animation.controller.MainController
+ru/sgt1503/redroses_animation/DB/Service/BotFollowerService.java
+ ru.sgt1503.redroses_animation.DB.Service.BotFollowerService
+ru/sgt1503/redroses_animation/DB/Entity/Winner.java
+ ru.sgt1503.redroses_animation.DB.Entity.Winner
+ru/sgt1503/redroses_animation/DB/Service/Impl/BotFollowerServiceImpl.java
+ ru.sgt1503.redroses_animation.DB.Service.Impl.BotFollowerServiceImpl
+ru/sgt1503/redroses_animation/DB/Service/Impl/PrizeServiceImpl.java
+ ru.sgt1503.redroses_animation.DB.Service.Impl.PrizeServiceImpl
+ru/sgt1503/redroses_animation/DB/Service/WinnerService.java
+ ru.sgt1503.redroses_animation.DB.Service.WinnerService
+ru/sgt1503/redroses_animation/DB/Repo/FollowerRepo.java
+ ru.sgt1503.redroses_animation.DB.Repo.FollowerRepo
+ru/sgt1503/redroses_animation/DB/Repo/WinnerRepo.java
+ ru.sgt1503.redroses_animation.DB.Repo.WinnerRepo
+ru/sgt1503/redroses_animation/DB/Service/Impl/WinnerServiceImpl.java
+ ru.sgt1503.redroses_animation.DB.Service.Impl.WinnerServiceImpl
+ru/sgt1503/redroses_animation/DB/Entity/Prize.java
+ ru.sgt1503.redroses_animation.DB.Entity.Prize
+ru/sgt1503/redroses_animation/DB/Repo/BotFollowerRepo.java
+ ru.sgt1503.redroses_animation.DB.Repo.BotFollowerRepo
+ru/sgt1503/redroses_animation/DB/Service/Impl/FollowerServiceImpl.java
+ ru.sgt1503.redroses_animation.DB.Service.Impl.FollowerServiceImpl
+ru/sgt1503/redroses_animation/DB/Entity/BotFollower.java
+ ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+ru/sgt1503/redroses_animation/Raffle.java
+ ru.sgt1503.redroses_animation.Raffle
+ ru.sgt1503.redroses_animation.Raffle$1
+ ru.sgt1503.redroses_animation.Raffle$2
+ru/sgt1503/redroses_animation/Config/TwitchClientConfiguration.java
+ ru.sgt1503.redroses_animation.Config.TwitchClientConfiguration

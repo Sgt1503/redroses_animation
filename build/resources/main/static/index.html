@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>asasd</title>
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <svg
+      id="rectangle"
+      width="547"
+      height="190"
+      viewBox="0 0 547 190"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2.5 17.0001C2.5 8.99199 8.99187 2.50012 17 2.50012H529.977C539.067 2.50012 545.915 10.7681 544.223 19.6995L514.665 175.699C513.368 182.545 507.386 187.5 500.419 187.5H17C8.99187 187.5 2.5 181.008 2.5 173V17.0001Z"
+        fill="url(#paint0_linear)"
+        stroke="url(#paint1_radial)"
+        stroke-width="5"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear"
+          x1="483.5"
+          y1="-8.99986"
+          x2="-114"
+          y2="221.5"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#FF0F00" />
+          <stop offset="1" stop-color="#2D5BFF" />
+        </linearGradient>
+        <radialGradient
+          id="paint1_radial"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(-30.5 120) rotate(-0.781762) scale(513.048 1215.11)"
+        >
+          <stop stop-color="#00A3FF" />
+          <stop offset="1" stop-color="#F52222" stop-opacity="0" />
+        </radialGradient>
+      </defs>
+    </svg>
+    <div class="frame" id="app">
+      <div class="group">
+        <!-- <div id="rectangle"></div> -->
+        <div class="rectangle-gets"></div>
+        <div class="rectangle-skin"></div>
+        <div class="img" :class="imgAnimationClass">
+          <img :src="ammoUrl" />
+        </div>
+
+        <div class="nickname" :class="whoAnimationClass">{{shownWinner}}</div>
+        <div class="skin" :class="whatAnimationClass">{{shownPrize}}</div>
+        <div class="gets">ВЫИГРАЛ</div>
+        <div class="tag">ОТ <span>REDROSES11111</span></div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let app = Vue.createApp({
+      data() {
+        return {
+          ammoUrl: "#",
+          winner: "qwe",
+          what: "nothing",
+          animaionState: "",
+          data: {},
+          answer: false,
+          //   whoAnimationClass: 'who-animation',
+          // imgAnimationClass: 'img-animation',
+          // whatAnimationClass: 'what-animation'
+        };
+      },
+      methods: {
+        updateData() {
+          fetch("http://35.192.165.21:8082/raffle/getWinner")
+            .then((response) => {
+              return response.json();
+            })
+            .then((data) => {
+              //   if (JSON.stringify(data) === JSON.stringify(this.data)) return
+              //   console.log(data);
+              this.animaionState = "forward";
+              this.winner = data.botFollower.username.toUpperCase();
+              this.what = data.prize.nameOfPrize;
+              this.ammoUrl = data.prize.urlToPng;
+              this.data = JSON.parse(JSON.stringify(data));
+            })
+            .catch(() => {
+              this.animaionState = "";
+            });
+        },
+        checkData() {
+          fetch("http://35.192.165.21:8082/raffle/getWinner")
+            .then((response) => {
+              return response.json();
+            })
+            .then((data) => {
+              if (JSON.stringify(this.data) === JSON.stringify(data)) {
+                this.answer = false;
+              } else {
+                console.log("back");
+                this.animaionState = "back";
+
+                // this.animaionState = "";
+                this.winner = data.botFollower.username.toUpperCase();
+                this.what = data.prize.nameOfPrize;
+                this.ammoUrl = data.prize.urlToPng;
+                this.data = JSON.parse(JSON.stringify(data));
+                console.log("forward");
+                setTimeout(() => {
+                  this.animaionState = "invisible";
+                  setTimeout(() => {
+                    this.animaionState = "forward";
+                  }, 2);
+                }, 3000);
+              }
+            });
+        },
+      },
+      computed: {
+        imgShown() {
+          return this.ammoUrl === "#" ? false : true;
+        },
+        shownWinner() {
+          return this.winner === "qwe" ? "NOTHING" : this.winner;
+        },
+        shownPrize() {
+          return this.what === "nothing" ? "NOBODY" : this.what;
+        },
+        whoAnimationClass() {
+          // return this.animaionState === "forward" ? "who-animation" : "who-animation-revese";
+          if (this.animaionState === "forward") return "who-animation";
+          if (this.animaionState === "back") return "who-animation-revese";
+          if (this.animaionState === "invisible") return "invisible";
+          return "";
+        },
+        imgAnimationClass() {
+          // return this.animaionState === "forward" ? "who-animation" : "who-animation-revese";
+          if (this.animaionState === "forward") return "img-animation";
+          if (this.animaionState === "back") return "img-animation-revese";
+          if (this.animaionState === "invisible") return "invisible";
+          return "";
+        },
+        whatAnimationClass() {
+          // return this.animaionState === "forward" ? "who-animation" : "who-animation-revese";
+          if (this.animaionState === "forward") return "what-animation";
+          if (this.animaionState === "back") return "what-animation-revese";
+          if (this.animaionState === "invisible") return "invisible";
+          return "";
+        },
+        // imgAnimationClass
+        // whatAnimationClass
+      },
+      mounted() {
+        this.animaionState = "invisible";
+
+        this.updateData();
+
+        setInterval(() => {
+          this.checkData();
+          this.animaionState = "";
+        }, 60000);
+      },
+    });
+
+    app.mount("#app");
+  </script>
+
+  <style>
+    /* Frame 6 */
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap");
+    body {
+      background-color: transparent;
+    }
+    img {
+      width: 100%;
+      position: absolute;
+      width: 385.81px;
+      /* height: 384.2px; */
+      /* left: 214.55px; */
+      top: 110px;
+      transform: rotate(16.26deg);
+    }
+    .frame {
+      position: relative;
+      width: 572px;
+      height: 326px;
+      top: 68px;
+      background-color: transparent;
+    }
+
+    /* Group 1 */
+    .group {
+      position: absolute;
+      width: 584.94px;
+      height: 476.84px;
+      left: 0px;
+      top: -75px;
+    }
+
+    /* Rectangle 1 */
+    #rectangle {
+      position: absolute;
+      /* width: 550.5px; */
+      /* height: 190px; */
+      left: 0px;
+      top: 73px;
+
+      /* background: linear-gradient(262.42deg, #ff0f00 10.18%, #2d5bff 120.22%); */
+      /* border-radius: 17px; */
+    }
+
+    .rectangle-skin {
+      position: absolute;
+      width: 478px;
+      height: 50px;
+      left: 35px;
+      top: 173px;
+
+      background: linear-gradient(
+        90deg,
+        #0fa0f0 22.8%,
+        rgba(210, 237, 252, 0) 96.7%,
+        rgba(255, 255, 255, 0) 161.89%
+      );
+    }
+
+    .img {
+      position: absolute;
+      width: 385.81px;
+      height: 384.2px;
+      left: 214.55px;
+      top: -75px;
+
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    .nickname {
+      /* ЧЕЙТО ЕБАНЫЙ НИКНЕЙМ */
+
+      position: absolute;
+      width: 358px;
+      height: 29px;
+      left: 36px;
+      top: 140px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 29px;
+
+      color: #ffed4e;
+
+      text-shadow: -1px 3px 4px rgba(0, 0, 0, 0.35);
+    }
+    /* ДЛИННОЕ НАХУЙ НАЗВАНИЕСКИНА ЕБАНОГО СУКА */
+    .skin {
+      position: absolute;
+      width: 330px;
+      height: 44px;
+      left: 42px;
+      top: 176px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 22px;
+
+      color: #ffffff;
+
+      /* border: 1px solid rgba(0, 0, 0, 0.5); */
+    }
+    .gets {
+      /* ПОЛУЧАЕТ */
+
+      position: absolute;
+      width: 200px;
+      height: 44px;
+      left: 48px;
+      top: 89px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+    .rectangle-gets {
+      position: absolute;
+      width: 235px;
+      height: 44px;
+      left: 30px;
+      top: 89px;
+
+      background: #ffffff;
+      border-radius: 13px;
+    }
+
+    .tag {
+      /* ОТ REDROSES11111 */
+
+      position: absolute;
+      width: 250px;
+      height: 29px;
+      left: 36px;
+      top: 226px;
+
+      font-family: Montserrat;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+
+      color: #0fa0f0;
+
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .tag span {
+      color: #ffc672;
+    }
+    .img-animation {
+      animation: img-slide 1s ease-in;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .who-animation {
+      animation: who-slide 1s ease-in;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .what-animation {
+      animation: what-slide 1s ease-in;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .img-animation-revese {
+      animation: img-slide 1s ease-in reverse;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .who-animation-revese {
+      animation: who-slide 1s ease-in reverse;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .what-animation-revese {
+      animation: what-slide 1s ease-in reverse;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+    }
+    .invisible {
+      opacity: 0;
+    }
+
+    @keyframes img-slide {
+      from {
+        opacity: 0;
+        transform: scale(3);
+      }
+      50% {
+        opacity: 0.01;
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    @keyframes who-slide {
+      from {
+        opacity: 0;
+
+        transform: translateX(-100px);
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes what-slide {
+      from {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      80% {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
+  </style>
+</html>

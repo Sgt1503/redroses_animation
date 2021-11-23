@@ -1,0 +1,4 @@
+ru/sgt1503/red_roses_bot/RedRosesBotApplicationTests.java
+ ru.sgt1503.red_roses_bot.RedRosesBotApplicationTests
+ru/sgt1503/redroses_animation/RedrosesAnimationApplicationTests.java
+ ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests

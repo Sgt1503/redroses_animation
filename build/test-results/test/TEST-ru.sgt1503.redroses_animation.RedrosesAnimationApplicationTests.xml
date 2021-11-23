@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T11:37:04" hostname="linux-vm" time="0.193">
+  <properties/>
+  <testcase name="contextLoads()" classname="ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests" time="0.193"/>
+  <system-out><![CDATA[11:36:57.576 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+11:36:57.577 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+11:36:57.578 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+11:36:57.579 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests], using SpringBootContextLoader
+11:36:57.580 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]: class path resource [ru/sgt1503/redroses_animation/RedrosesAnimationApplicationTests-context.xml] does not exist
+11:36:57.581 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]: class path resource [ru/sgt1503/redroses_animation/RedrosesAnimationApplicationTestsContext.groovy] does not exist
+11:36:57.582 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:36:57.582 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]: RedrosesAnimationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:36:57.589 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]
+11:36:57.633 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/sgt1503/redroses_animation/build/classes/java/main/ru/sgt1503/redroses_animation/RedrosesAnimationApplication.class]
+11:36:57.634 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration ru.sgt1503.redroses_animation.RedrosesAnimationApplication for test class ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests
+11:36:57.777 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests]: using defaults.
+11:36:57.778 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+11:36:57.800 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@29034e73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3c24a50e, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@32a65994, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@9708742, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3a3330c9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2326fe54, org.springframework.test.context.transaction.TransactionalTestExecutionListener@234c795d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2e0bb0e1, org.springframework.test.context.event.EventPublishingTestExecutionListener@d9d6891, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@19ddf328, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@599be7df, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ae4c8b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4c5bf498, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3ae90a88, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3c4aa715]
+11:36:57.805 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7fa40a87 testClass = RedrosesAnimationApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@68e88526 testClass = RedrosesAnimationApplicationTests, locations = '{}', classes = '{class ru.sgt1503.redroses_animation.RedrosesAnimationApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@364f259d, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@7d3cdca5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@7b1bbff0, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@148c79bf, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@4d722cb8, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@3527f644], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+11:36:57.906 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.5)
+
+2021-06-02 11:36:58,280 INFO  ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests : Starting RedrosesAnimationApplicationTests using Java 11.0.11 on linux-vm with PID 3689 (started by sgt1503 in /home/sgt1503/redroses_animation)
+2021-06-02 11:36:58,281 INFO  ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests : The following profiles are active: development
+2021-06-02 11:36:59,239 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-02 11:36:59,332 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
+2021-06-02 11:37:00,048 DEBUG org.hibernate.jpa.internal.util.LogHelper : PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: jdk.internal.loader.ClassLoaders$AppClassLoader@5c29bfd
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/home/sgt1503/redroses_animation/build/classes/java/test/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+		ru.sgt1503.redroses_animation.DB.Entity.Follower
+		ru.sgt1503.redroses_animation.DB.Entity.Prize
+		ru.sgt1503.redroses_animation.DB.Entity.Winner]
+	Mapping files names []
+	Properties []
+2021-06-02 11:37:00,085 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2021-06-02 11:37:00,087 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2021-06-02 11:37:00,100 DEBUG org.hibernate.integrator.internal.IntegratorServiceImpl : Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2021-06-02 11:37:00,170 INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.30.Final
+2021-06-02 11:37:00,172 DEBUG org.hibernate.cfg.Environment : HHH000206: hibernate.properties not found
+2021-06-02 11:37:00,294 DEBUG org.hibernate.service.spi.ServiceBinding : Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2021-06-02 11:37:00,304 DEBUG org.hibernate.cache.internal.RegionFactoryInitiator : Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2021-06-02 11:37:00,305 DEBUG org.hibernate.cache.internal.RegionFactoryInitiator : Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2021-06-02 11:37:00,334 INFO  org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-02 11:37:00,366 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@42bf4cec
+2021-06-02 11:37:00,366 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration boolean -> org.hibernate.type.BooleanType@42bf4cec
+2021-06-02 11:37:00,366 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@42bf4cec
+2021-06-02 11:37:00,367 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4d092129
+2021-06-02 11:37:00,368 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration true_false -> org.hibernate.type.TrueFalseType@22f48888
+2021-06-02 11:37:00,368 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration yes_no -> org.hibernate.type.YesNoType@60fb37b7
+2021-06-02 11:37:00,370 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@233fb5a6
+2021-06-02 11:37:00,370 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration byte -> org.hibernate.type.ByteType@233fb5a6
+2021-06-02 11:37:00,370 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@233fb5a6
+2021-06-02 11:37:00,371 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration character -> org.hibernate.type.CharacterType@7c257471
+2021-06-02 11:37:00,371 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration char -> org.hibernate.type.CharacterType@7c257471
+2021-06-02 11:37:00,372 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@7c257471
+2021-06-02 11:37:00,373 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@5435bccc
+2021-06-02 11:37:00,373 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration short -> org.hibernate.type.ShortType@5435bccc
+2021-06-02 11:37:00,373 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@5435bccc
+2021-06-02 11:37:00,374 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration integer -> org.hibernate.type.IntegerType@79c0de94
+2021-06-02 11:37:00,375 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration int -> org.hibernate.type.IntegerType@79c0de94
+2021-06-02 11:37:00,375 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@79c0de94
+2021-06-02 11:37:00,376 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@b129188
+2021-06-02 11:37:00,376 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration long -> org.hibernate.type.LongType@b129188
+2021-06-02 11:37:00,376 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Long -> org.hibernate.type.LongType@b129188
+2021-06-02 11:37:00,377 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@109c978d
+2021-06-02 11:37:00,377 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration float -> org.hibernate.type.FloatType@109c978d
+2021-06-02 11:37:00,378 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@109c978d
+2021-06-02 11:37:00,379 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@1430ee9a
+2021-06-02 11:37:00,379 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration double -> org.hibernate.type.DoubleType@1430ee9a
+2021-06-02 11:37:00,379 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1430ee9a
+2021-06-02 11:37:00,380 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2e681066
+2021-06-02 11:37:00,381 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2e681066
+2021-06-02 11:37:00,382 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@4d7762e0
+2021-06-02 11:37:00,382 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@4d7762e0
+2021-06-02 11:37:00,383 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration string -> org.hibernate.type.StringType@5c5101f7
+2021-06-02 11:37:00,383 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.String -> org.hibernate.type.StringType@5c5101f7
+2021-06-02 11:37:00,383 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@557f568f
+2021-06-02 11:37:00,384 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@47f3c10e
+2021-06-02 11:37:00,385 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration url -> org.hibernate.type.UrlType@5f996d78
+2021-06-02 11:37:00,385 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.net.URL -> org.hibernate.type.UrlType@5f996d78
+2021-06-02 11:37:00,386 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration Duration -> org.hibernate.type.DurationType@266720b8
+2021-06-02 11:37:00,386 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@266720b8
+2021-06-02 11:37:00,387 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration Instant -> org.hibernate.type.InstantType@240d7ceb
+2021-06-02 11:37:00,388 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@240d7ceb
+2021-06-02 11:37:00,389 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@3cd59036
+2021-06-02 11:37:00,389 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@3cd59036
+2021-06-02 11:37:00,390 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@12e56988
+2021-06-02 11:37:00,391 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@12e56988
+2021-06-02 11:37:00,392 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7c74e005
+2021-06-02 11:37:00,392 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7c74e005
+2021-06-02 11:37:00,393 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2dbdcbbf
+2021-06-02 11:37:00,394 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2dbdcbbf
+2021-06-02 11:37:00,395 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@c7cec96
+2021-06-02 11:37:00,395 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@c7cec96
+2021-06-02 11:37:00,397 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@58cd7060
+2021-06-02 11:37:00,397 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@58cd7060
+2021-06-02 11:37:00,399 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration date -> org.hibernate.type.DateType@4a692a18
+2021-06-02 11:37:00,399 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Date -> org.hibernate.type.DateType@4a692a18
+2021-06-02 11:37:00,400 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration time -> org.hibernate.type.TimeType@104c0794
+2021-06-02 11:37:00,400 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@104c0794
+2021-06-02 11:37:00,402 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration timestamp -> org.hibernate.type.TimestampType@79f770f
+2021-06-02 11:37:00,402 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@79f770f
+2021-06-02 11:37:00,402 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@79f770f
+2021-06-02 11:37:00,404 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7448c1bd
+2021-06-02 11:37:00,405 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration calendar -> org.hibernate.type.CalendarType@3e6bd0e4
+2021-06-02 11:37:00,406 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3e6bd0e4
+2021-06-02 11:37:00,406 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3e6bd0e4
+2021-06-02 11:37:00,407 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4d7c66f1
+2021-06-02 11:37:00,408 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@3ccc1eea
+2021-06-02 11:37:00,409 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration locale -> org.hibernate.type.LocaleType@23613652
+2021-06-02 11:37:00,410 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@23613652
+2021-06-02 11:37:00,411 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration currency -> org.hibernate.type.CurrencyType@6e4d216c
+2021-06-02 11:37:00,411 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6e4d216c
+2021-06-02 11:37:00,412 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration timezone -> org.hibernate.type.TimeZoneType@15323a9
+2021-06-02 11:37:00,412 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@15323a9
+2021-06-02 11:37:00,413 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration class -> org.hibernate.type.ClassType@1923e7e9
+2021-06-02 11:37:00,413 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@1923e7e9
+2021-06-02 11:37:00,414 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@16ad6fd0
+2021-06-02 11:37:00,414 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@16ad6fd0
+2021-06-02 11:37:00,415 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@1c9177c2
+2021-06-02 11:37:00,416 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration binary -> org.hibernate.type.BinaryType@584b0087
+2021-06-02 11:37:00,417 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration byte[] -> org.hibernate.type.BinaryType@584b0087
+2021-06-02 11:37:00,417 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration [B -> org.hibernate.type.BinaryType@584b0087
+2021-06-02 11:37:00,418 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@fa1b3d7
+2021-06-02 11:37:00,418 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@fa1b3d7
+2021-06-02 11:37:00,419 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@fa1b3d7
+2021-06-02 11:37:00,420 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration row_version -> org.hibernate.type.RowVersionType@3345b0d6
+2021-06-02 11:37:00,423 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration image -> org.hibernate.type.ImageType@12e1c01f
+2021-06-02 11:37:00,424 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration characters -> org.hibernate.type.CharArrayType@617ca38c
+2021-06-02 11:37:00,424 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration char[] -> org.hibernate.type.CharArrayType@617ca38c
+2021-06-02 11:37:00,424 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration [C -> org.hibernate.type.CharArrayType@617ca38c
+2021-06-02 11:37:00,425 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@257c120b
+2021-06-02 11:37:00,425 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@257c120b
+2021-06-02 11:37:00,425 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@257c120b
+2021-06-02 11:37:00,426 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration text -> org.hibernate.type.TextType@79aa97d5
+2021-06-02 11:37:00,426 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration ntext -> org.hibernate.type.NTextType@483ce72c
+2021-06-02 11:37:00,428 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration blob -> org.hibernate.type.BlobType@79a64877
+2021-06-02 11:37:00,428 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@79a64877
+2021-06-02 11:37:00,429 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@7de41181
+2021-06-02 11:37:00,430 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration clob -> org.hibernate.type.ClobType@1fcbb5c4
+2021-06-02 11:37:00,430 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1fcbb5c4
+2021-06-02 11:37:00,431 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration nclob -> org.hibernate.type.NClobType@3f1cec9a
+2021-06-02 11:37:00,431 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3f1cec9a
+2021-06-02 11:37:00,432 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5bd5666f
+2021-06-02 11:37:00,432 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@785e0847
+2021-06-02 11:37:00,433 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration serializable -> org.hibernate.type.SerializableType@3c7bfde
+2021-06-02 11:37:00,438 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration object -> org.hibernate.type.ObjectType@7deaa395
+2021-06-02 11:37:00,438 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@7deaa395
+2021-06-02 11:37:00,438 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2428d494
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@44070ebb
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3628cc88
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@b27e051
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@69c919d5
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@15c7b081
+2021-06-02 11:37:00,439 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@657b723d
+2021-06-02 11:37:00,440 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@516a23ab
+2021-06-02 11:37:00,461 DEBUG org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@48450a97] into BootstrapContext; was [null]
+2021-06-02 11:37:00,461 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@48450a97) [was null]
+2021-06-02 11:37:00,462 DEBUG org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@5c7244a7] into BootstrapContext; was [null]
+2021-06-02 11:37:00,462 DEBUG org.hibernate.boot.internal.BootstrapContextImpl : Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@5994cefe] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@7b97f1f8]
+2021-06-02 11:37:00,481 DEBUG org.hibernate.boot.internal.BootstrapContextImpl : Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@48450a97]
+2021-06-02 11:37:00,481 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@48450a97]
+2021-06-02 11:37:00,494 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2021-06-02 11:37:00,495 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2021-06-02 11:37:00,496 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2021-06-02 11:37:00,496 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2021-06-02 11:37:00,496 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2021-06-02 11:37:00,497 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2021-06-02 11:37:00,498 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2021-06-02 11:37:00,499 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-06-02 11:37:00,501 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2021-06-02 11:37:00,502 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2021-06-02 11:37:00,502 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2021-06-02 11:37:00,503 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2021-06-02 11:37:00,503 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2021-06-02 11:37:00,504 DEBUG org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory : Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2021-06-02 11:37:00,510 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting...
+2021-06-02 11:37:01,002 INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed.
+2021-06-02 11:37:01,016 DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Database ->
+       name : PostgreSQL
+    version : 13.2 (Ubuntu 13.2-1.pgdg20.04+1)
+      major : 13
+      minor : 2
+2021-06-02 11:37:01,016 DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.19
+      major : 42
+      minor : 2
+2021-06-02 11:37:01,017 DEBUG org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator : JDBC version : 4.2
+2021-06-02 11:37:01,030 INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-06-02 11:37:01,046 DEBUG org.hibernate.engine.jdbc.env.spi.IdentifierHelperBuilder : JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2021-06-02 11:37:01,171 DEBUG org.hibernate.boot.model.relational.Namespace : Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2021-06-02 11:37:01,178 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@6cca8baf
+2021-06-02 11:37:01,179 DEBUG org.hibernate.type.BasicTypeRegistry : Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@6cca8baf
+2021-06-02 11:37:01,180 DEBUG org.hibernate.type.BasicTypeRegistry : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@16ad6fd0
+2021-06-02 11:37:01,185 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1b53ec6c] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@48cb2c95]
+2021-06-02 11:37:01,265 DEBUG org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,302 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-06-02 11:37:01,307 DEBUG org.hibernate.cfg.annotations.EntityBinder : Import with entity name BotFollower
+2021-06-02 11:37:01,310 DEBUG org.hibernate.cfg.annotations.EntityBinder : Bind entity ru.sgt1503.redroses_animation.DB.Entity.BotFollower on table bot_follower
+2021-06-02 11:37:01,333 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,336 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.BotFollower] is safe
+2021-06-02 11:37:01,336 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,337 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-06-02 11:37:01,340 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:id]
+2021-06-02 11:37:01,341 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-06-02 11:37:01,346 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-06-02 11:37:01,350 DEBUG org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2021-06-02 11:37:01,352 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=aboba_counter, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,352 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property abobaCounter with lazy=false
+2021-06-02 11:37:01,352 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:abobaCounter]
+2021-06-02 11:37:01,352 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for abobaCounter
+2021-06-02 11:37:01,353 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property abobaCounter
+2021-06-02 11:37:01,353 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=message_counter, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,353 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property messageCounter with lazy=false
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:messageCounter]
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for messageCounter
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property messageCounter
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=steamid, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property steamID with lazy=false
+2021-06-02 11:37:01,354 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:steamID]
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for steamID
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property steamID
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=userid, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property userID with lazy=false
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:userID]
+2021-06-02 11:37:01,355 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for userID
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property userID
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(bot_follower), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property username with lazy=false
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.BotFollower:username]
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for username
+2021-06-02 11:37:01,356 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property username
+2021-06-02 11:37:01,358 DEBUG org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: ru.sgt1503.redroses_animation.DB.Entity.Follower
+2021-06-02 11:37:01,358 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-06-02 11:37:01,359 DEBUG org.hibernate.cfg.annotations.EntityBinder : Import with entity name Follower
+2021-06-02 11:37:01,359 DEBUG org.hibernate.cfg.annotations.EntityBinder : Bind entity ru.sgt1503.redroses_animation.DB.Entity.Follower on table follower
+2021-06-02 11:37:01,360 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,360 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Follower] is safe
+2021-06-02 11:37:01,361 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Follower
+2021-06-02 11:37:01,361 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-06-02 11:37:01,361 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:id]
+2021-06-02 11:37:01,361 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-06-02 11:37:01,361 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-06-02 11:37:01,362 DEBUG org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2021-06-02 11:37:01,362 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=aboba_counter, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,362 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property abobaCounter with lazy=false
+2021-06-02 11:37:01,362 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:abobaCounter]
+2021-06-02 11:37:01,362 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for abobaCounter
+2021-06-02 11:37:01,363 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property abobaCounter
+2021-06-02 11:37:01,364 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=message_counter, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,364 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property messageCounter with lazy=false
+2021-06-02 11:37:01,364 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:messageCounter]
+2021-06-02 11:37:01,364 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for messageCounter
+2021-06-02 11:37:01,365 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property messageCounter
+2021-06-02 11:37:01,365 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=steamid, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property steamID with lazy=false
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:steamID]
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for steamID
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property steamID
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=userid, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property userID with lazy=false
+2021-06-02 11:37:01,366 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:userID]
+2021-06-02 11:37:01,367 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for userID
+2021-06-02 11:37:01,367 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property userID
+2021-06-02 11:37:01,367 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(follower), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,367 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property username with lazy=false
+2021-06-02 11:37:01,367 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Follower:username]
+2021-06-02 11:37:01,368 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for username
+2021-06-02 11:37:01,368 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property username
+2021-06-02 11:37:01,368 DEBUG org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,369 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-06-02 11:37:01,369 DEBUG org.hibernate.cfg.annotations.EntityBinder : Import with entity name Prize
+2021-06-02 11:37:01,369 DEBUG org.hibernate.cfg.annotations.EntityBinder : Bind entity ru.sgt1503.redroses_animation.DB.Entity.Prize on table prize
+2021-06-02 11:37:01,370 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(prize), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,370 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Prize] is safe
+2021-06-02 11:37:01,370 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,370 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-06-02 11:37:01,370 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Prize:id]
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(prize), mappingColumn=name_of_prize, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property nameOfPrize with lazy=false
+2021-06-02 11:37:01,371 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Prize:nameOfPrize]
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for nameOfPrize
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property nameOfPrize
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(prize), mappingColumn=url_to_png, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property urlToPng with lazy=false
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Prize:urlToPng]
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for urlToPng
+2021-06-02 11:37:01,372 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property urlToPng
+2021-06-02 11:37:01,373 DEBUG org.hibernate.cfg.AnnotationBinder : Binding entity from annotated class: ru.sgt1503.redroses_animation.DB.Entity.Winner
+2021-06-02 11:37:01,373 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2021-06-02 11:37:01,373 DEBUG org.hibernate.cfg.annotations.EntityBinder : Import with entity name Winner
+2021-06-02 11:37:01,373 DEBUG org.hibernate.cfg.annotations.EntityBinder : Bind entity ru.sgt1503.redroses_animation.DB.Entity.Winner on table winner
+2021-06-02 11:37:01,379 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,379 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Winner] is safe
+2021-06-02 11:37:01,379 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Winner
+2021-06-02 11:37:01,380 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property id with lazy=false
+2021-06-02 11:37:01,380 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Winner:id]
+2021-06-02 11:37:01,380 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for id
+2021-06-02 11:37:01,380 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property id
+2021-06-02 11:37:01,380 DEBUG org.hibernate.cfg.BinderHelper : #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, org.hibernate.id.enhanced.SequenceStyleGenerator, , ...)
+2021-06-02 11:37:01,382 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3JoinColumn{logicalColumnName='botfollower_username', referencedColumn='', mappedBy=''}
+2021-06-02 11:37:01,382 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=bot_follower, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,386 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property botFollower
+2021-06-02 11:37:01,386 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3JoinColumn{logicalColumnName='prize_nameOfPrize', referencedColumn='', mappedBy=''}
+2021-06-02 11:37:01,386 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=prize, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,387 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property prize
+2021-06-02 11:37:01,387 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=prize_name, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,387 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property prizeName with lazy=false
+2021-06-02 11:37:01,387 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Winner:prizeName]
+2021-06-02 11:37:01,387 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for prizeName
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property prizeName
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=url_to_png, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property urlToPng with lazy=false
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Winner:urlToPng]
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for urlToPng
+2021-06-02 11:37:01,388 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property urlToPng
+2021-06-02 11:37:01,389 DEBUG org.hibernate.cfg.Ejb3Column : Binding column: Ejb3Column{table=org.hibernate.mapping.Table(winner), mappingColumn=username, insertable=true, updatable=true, unique=false}
+2021-06-02 11:37:01,389 DEBUG org.hibernate.cfg.annotations.PropertyBinder : MetadataSourceProcessor property username with lazy=false
+2021-06-02 11:37:01,389 DEBUG org.hibernate.cfg.AbstractPropertyHolder : Attempting to locate auto-apply AttributeConverter for property [ru.sgt1503.redroses_animation.DB.Entity.Winner:username]
+2021-06-02 11:37:01,389 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : building SimpleValue for username
+2021-06-02 11:37:01,389 DEBUG org.hibernate.cfg.annotations.PropertyBinder : Building property username
+2021-06-02 11:37:01,390 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for abobaCounter
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for messageCounter
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for steamID
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for userID
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for username
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for abobaCounter
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for messageCounter
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for steamID
+2021-06-02 11:37:01,391 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for userID
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for username
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for nameOfPrize
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for urlToPng
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for id
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for prizeName
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for urlToPng
+2021-06-02 11:37:01,392 DEBUG org.hibernate.cfg.annotations.SimpleValueBinder : Starting fillSimpleValue for username
+2021-06-02 11:37:01,397 DEBUG org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [bot_follower]
+2021-06-02 11:37:01,397 DEBUG org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [follower]
+2021-06-02 11:37:01,397 DEBUG org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [prize]
+2021-06-02 11:37:01,397 DEBUG org.hibernate.mapping.PrimaryKey : Forcing column [id] to be non-null as it is part of the primary key for table [winner]
+2021-06-02 11:37:01,397 DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,402 DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,404 DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,404 DEBUG org.hibernate.boot.internal.InFlightMetadataCollectorImpl : Resolving reference to class: ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,453 DEBUG org.hibernate.internal.SessionFactoryImpl : Building session factory
+2021-06-02 11:37:01,454 DEBUG org.hibernate.cfg.Settings : SessionFactory name : null
+2021-06-02 11:37:01,454 DEBUG org.hibernate.cfg.Settings : Automatic flush during beforeCompletion(): enabled
+2021-06-02 11:37:01,454 DEBUG org.hibernate.cfg.Settings : Automatic session close at end of transaction: disabled
+2021-06-02 11:37:01,454 DEBUG org.hibernate.cfg.Settings : Statistics: disabled
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Deleted entity synthetic identifier rollback: disabled
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Default entity-mode: pojo
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Allow initialization of lazy state outside session : disabled
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Using BatchFetchStyle : LEGACY
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Default batch fetch size: -1
+2021-06-02 11:37:01,455 DEBUG org.hibernate.cfg.Settings : Maximum outer join fetch depth: null
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Default null ordering: NONE
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Order SQL updates by primary key: disabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Order SQL inserts for batching: disabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : multi-tenancy strategy : NONE
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : JTA Track by Thread: enabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Query language substitutions: {}
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Named query checking : enabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Second-level cache: disabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Second-level query cache: disabled
+2021-06-02 11:37:01,456 DEBUG org.hibernate.cfg.Settings : Second-level query cache factory: null
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Second-level cache region prefix: null
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Optimize second-level cache for minimal puts: disabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Structured second-level cache entries: disabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Second-level cache direct-reference entries: disabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Automatic eviction of collection cache: disabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : JDBC batch size: 15
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : JDBC batch updates for versioned data: enabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Scrollable result sets: enabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : Wrap result sets: disabled
+2021-06-02 11:37:01,457 DEBUG org.hibernate.cfg.Settings : JDBC3 getGeneratedKeys(): enabled
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : JDBC result set fetch size: null
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : Connection release mode: ON_CLOSE
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : Generate SQL with comments: disabled
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : JPA compliance - query : disabled
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : JPA compliance - closed-handling : disabled
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : JPA compliance - lists : disabled
+2021-06-02 11:37:01,458 DEBUG org.hibernate.cfg.Settings : JPA compliance - transactions : disabled
+2021-06-02 11:37:01,545 DEBUG org.hibernate.internal.SessionFactoryImpl : Session factory constructed with filter configurations : {}
+2021-06-02 11:37:01,545 DEBUG org.hibernate.internal.SessionFactoryImpl : Instantiating session factory with properties: {awt.toolkit=sun.awt.X11.XToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=11, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@301071ec, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, org.gradle.test.worker=2, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/home/sgt1503/.gradle/caches/7.0.2/workerMain/gradle-worker.jar:/home/sgt1503/redroses_animation/build/classes/java/test:/home/sgt1503/redroses_animation/build/resources/test:/home/sgt1503/redroses_animation/build/classes/java/main:/home/sgt1503/redroses_animation/build/resources/main:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-data-jpa/2.4.5/cba91e070e601c55eec0d8a1948dcca15703ad37/spring-boot-starter-data-jpa-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-web/2.4.5/93cf2655557534e35723fbafa069bed2ee125832/spring-boot-starter-web-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.postgresql/postgresql/42.2.19/85cb20fe8151b6d90900d5ae5cfe0ad7c3e8f921/postgresql-42.2.19.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/2.4.5/a8f04cd49dc761c9a1af2f3e41cb0fc51b3de12f/spring-boot-starter-test-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-aop/2.4.5/853bfc5d1c867f66880971515bda82ecc737e839/spring-boot-starter-aop-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jdbc/2.4.5/abcca18ef5a2c877a5574a492b570bb260640de3/spring-boot-starter-jdbc-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/jakarta.transaction/jakarta.transaction-api/1.3.3/c4179d48720a1e87202115fbed6089bdc4195405/jakarta.transaction-api-1.3.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/jakarta.persistence/jakarta.persistence-api/2.2.3/8f6ea5daedc614f07a3654a455660145286f024e/jakarta.persistence-api-2.2.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-core/5.4.30.Final/cc01edcad99375a595ab1b22933857d552684e11/hibernate-core-5.4.30.Final.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-jpa/2.4.8/3b828cf72c68f3affc75809229fc729ab530c6af/spring-data-jpa-2.4.8.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aspects/5.3.6/69b5017aa748f6832798079ece6a018cb25e7f15/spring-aspects-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-json/2.4.5/5c1623aa53adf10cd98884f60db2d9f5958dbc28/spring-boot-starter-json-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/2.4.5/5f5398f459beb958fc2ece1a433420bf03cec628/spring-boot-starter-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/2.4.5/f562f975967df544afd88d8d10aa4bcd356b799d/spring-boot-starter-tomcat-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.3.6/a9bff0c28f90c73b0443de1d9299f32778ac8421/spring-webmvc-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.3.6/f9290db7324194921c236ad9a940467f55304fa7/spring-web-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.5.0/2f50520c8abea66fbd8d26e481d3aef5c673b510/checker-qual-3.5.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/2.4.5/b90b78690bed25eb742f20c8584ce67e21b3a3f5/spring-boot-test-autoconfigure-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/2.4.5/5bf8d6e7dfd30e43c04c7b1980cead057cdf7267/spring-boot-test-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.4.0/765a4401ceb2dc8d40553c2075eb80a8fa35c2ae/json-path-2.4.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/jaxb-runtime/2.3.4/5f3828d3a345ff3d8acb83f07ba04eccf59e15bb/jaxb-runtime-2.3.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/2.3.3/48e3b9cfc10752fba3521d6511f4165bea951801/jakarta.xml.bind-api-2.3.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.18.1/aaa02680dd92a568a4278bb40aa4a6305f632ec0/assertj-core-3.18.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/2.2/1820c0968dba3a11a1b30669bb1f01978a91dedc/hamcrest-2.2.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/3.6.28/23149890c3b6047604a682aa3d47151d440e1bfa/mockito-junit-jupiter-3.6.28.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/5.7.1/6f81b3c053433a8a40a378d2b4f056c5c31e50ff/junit-jupiter-params-5.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.7.1/7fcfa59c5533abb41f86b1408960737eeaf1f49f/junit-jupiter-engine-5.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.7.1/a7261dff44e64aea7f621842eac5977fd6d2412d/junit-jupiter-api-5.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.7.1/d276a968c57f5d60a421dedd1f8b6ca2fae09e86/junit-platform-engine-1.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.7.1/7c49f0074842d07f4335de2389d624a7437d1407/junit-platform-commons-1.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/5.7.1/a4a80ea9b0cca47781edcf9f2d4f1f4f7ce9436e/junit-jupiter-5.7.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/3.6.28/ad16f503916da658bd7b805816ae3b296f3eea4c/mockito-core-3.6.28.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.0/6c9d5fe2f59da598d9aefc1cfc6528ff3cf32df3/jsonassert-1.5.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/5.3.6/5c193fe51327eb47f8d049ab40619ccdcfcf45e9/spring-test-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/2.4.5/32887531b5a125d4840a08f9610aec766de73606/spring-boot-autoconfigure-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/2.4.5/d9b82470df2e9549e448d7cef39e578d91f9867f/spring-boot-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.3.6/d99d3931528309a4ff49b7d18f76f1657aa16c52/spring-context-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.3.6/510d9afcfce1fa9a2086906ab87b9989973c251c/spring-aop-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.3.6/804d2fe2df5c2aee3b263e22e28741731724a515/spring-orm-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jdbc/5.3.6/986092dcd187de4d3dbfb5291cef4483f1946d40/spring-jdbc-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.4.8/6e57826833103244bd9c94266b5dd8886192d222/spring-data-commons-2.4.8.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-tx/5.3.6/c428fe675aca705e6f8b284df8320f8a76e0dd57/spring-tx-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.3.6/99cc944fb3454410b47fc98d4b148a6205bfe8f6/spring-beans-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.3.6/33ba1d8dfaab0fd60ce4213a206f5d4fc77ce27a/spring-expression-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.3.6/8f91f60f628075701fde72bb5a43a33feeb27e93/spring-core-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.7.0/4d014eac96329c70175116b185749765cee0aad5/xmlunit-core-2.7.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.9.6/ee3b73aa16df35179255f17354d9dfd8e7822835/aspectjweaver-1.9.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/3.4.5/aa1a2c00aae8e4ba8308e19940711bb9525b103d/HikariCP-3.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.hibernate.common/hibernate-commons-annotations/5.1.2.Final/e59ffdbc6ad09eeb33507b39ffcf287679a498c8/hibernate-commons-annotations-5.1.2.Final.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.jboss.logging/jboss-logging/3.4.1.Final/40fd4d696c55793e996d1ff3c475833f836c2498/jboss-logging-3.4.1.Final.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.javassist/javassist/3.27.0-GA/f63e6aa899e15eca8fdaa402a79af4c417252213/javassist-3.27.0-GA.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.10.22/ef45d7e2cd1c600d279704f492ed5ce2ceb6cdb5/byte-buddy-1.10.22.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.jboss/jandex/2.2.3.Final/d3865101f0666b63586683bd811d754517f331ab/jandex-2.2.3.Final.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml/classmate/1.5.1/3fe0bed568c62df5e89f4f174c101eab25345b6c/classmate-1.5.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.dom4j/dom4j/2.1.3/a75914155a9f5808963170ec20653668a2ffd2fd/dom4j-2.1.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/2.4.5/1537bbc2e8c6c9db806f9fa11ca7af394d7adacc/spring-boot-starter-logging-2.4.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.2.3/7c4f3c474fb2c041d8028740440937705ebb473a/logback-classic-1.2.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.13.3/966f6fd1af4959d6b12bfa880121d4a2b164f857/log4j-to-slf4j-2.13.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/1.7.30/d58bebff8cbf70ff52b59208586095f467656c30/jul-to-slf4j-1.7.30.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.30/b5a4b6d16ab13e34a88fae84c35cd5d68cac922c/slf4j-api-1.7.30.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/1.3.5/59eb84ee0d616332ff44aba065f3888cf002cd2d/jakarta.annotation-api-1.3.5.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.27/359d62567480b07a679dc643f82fc926b100eed5/snakeyaml-1.27.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jdk8/2.11.4/e1540dea3c6c681ea4e335a960f730861ee3bedb/jackson-datatype-jdk8-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.datatype/jackson-datatype-jsr310/2.11.4/ce6fc76bba06623720e5a9308386b6ae74753f4d/jackson-datatype-jsr310-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.module/jackson-module-parameter-names/2.11.4/432e050d79f2282a66c320375d628f1b0842cb12/jackson-module-parameter-names-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.11.4/5d9f3d441f99d721b957e3497f0a6465c764fad4/jackson-databind-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/9.0.45/5cefd0aab62e2938f51110ebeb557b30ed5abab/tomcat-embed-websocket-9.0.45.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/9.0.45/8fb7d78b14e2deb8fec430498c64418ec0a2d983/tomcat-embed-core-9.0.45.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.glassfish/jakarta.el/3.0.3/dab46ee1ee23f7197c13d7c40fce14817c9017df/jakarta.el-3.0.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.3/7396407491352ce4fa30de92efb158adb76b5b/json-smart-2.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/1.2.2/99f53adba383cb1bf7c3862844488574b559621f/jakarta.activation-api-1.2.2.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.10.22/b01df6b71a882b9fde5a608a26e641cd399a4d83/byte-buddy-agent-1.10.22.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.1/48f12deaae83a8dfc3775d830c9fd60ea59bbbca/objenesis-3.1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.springframework/spring-jcl/5.3.6/53ddfc5cfdf438a1d3346fc2912c3e3049a8cb76/spring-jcl-5.3.6.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.3.4/257fa649d3137a1060d222aefb96b7d1dd5f1286/txw2-2.3.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/3.0.12/cbbe1a62b0cc6c85972e99d52aaee350153dc530/istack-commons-runtime-3.0.12.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.sun.activation/jakarta.activation/1.2.2/74548703f9851017ce2f556066659438019e7eb5/jakarta.activation-1.2.2.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.11.4/2c3f5c079330f3a01726686a078979420f547ae4/jackson-annotations-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.11.4/593f7b18bab07a76767f181e2a2336135ce82cc4/jackson-core-2.11.4.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/1.2/c592b500269bfde36096641b01238a8350f8aa31/accessors-smart-1.2.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.0/fc9dff4bb36d627bdc553de77e1f17efd790876c/apiguardian-api-1.1.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.2.3/864344400c3d4d92dfeb0a305dc87d953677c03c/logback-core-1.2.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.13.3/ec1508160b93d274b1add34419b897bae84c6ca9/log4j-api-2.13.3.jar:/home/sgt1503/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/5.0.4/da08b8cce7bbf903602a25a3a163ae252435795/asm-5.0.4.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://openjdk.java.net/, user.timezone=Etc/UTC, os.name=Linux, java.vm.specification.version=11, javax.persistence.validation.mode=AUTO, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/home/sgt1503/.sdkman/candidates/java/11.0.11-open/lib, sun.java.command=worker.org.gradle.process.internal.worker.GradleWorkerMain 'Gradle Test Executor 2', javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@cf0f87e, javax.persistence.sharedCache.mode=UNSPECIFIED, jdk.debug=release, sun.cpu.endian=little, user.home=/home/sgt1503, user.language=en, java.specification.vendor=Oracle Corporation, org.gradle.native=false, java.version.date=2021-04-20, java.home=/home/sgt1503/.sdkman/candidates/java/11.0.11-open, file.separator=/, java.vm.compressedOopsMode=32-bit, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, FILE_LOG_CHARSET=UTF-8, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.awt.headless=true, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11.0.11+9, user.name=sgt1503, path.separator=:, os.version=5.4.0-26-generic, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, java.vendor.version=18.9, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=/tmp, java.version=11.0.11, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/home/sgt1503/redroses_animation, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, PID=3689, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, org.gradle.internal.worker.tmpdir=/home/sgt1503/redroses_animation/build/tmp/test/work, CONSOLE_LOG_CHARSET=UTF-8, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@8e0f839, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11.0.11+9, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, hibernate.connection.datasource=HikariDataSource (HikariPool-1), CONSOLE_LOG_PATTERN=%d %-5level %logger : %msg%n, java.class.version=55.0}
+2021-06-02 11:37:01,563 DEBUG org.hibernate.secure.spi.JaccIntegrator : Skipping JACC integration as it was not enabled
+2021-06-02 11:37:01,566 DEBUG org.hibernate.internal.SessionFactoryImpl : Instantiated session factory
+2021-06-02 11:37:01,566 DEBUG org.hibernate.type.spi.TypeConfiguration$Scope : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1b53ec6c] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@222fe58e]
+2021-06-02 11:37:01,622 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Prize] is safe
+2021-06-02 11:37:01,623 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,832 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.BotFollower] is safe
+2021-06-02 11:37:01,832 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,857 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Winner] is safe
+2021-06-02 11:37:01,857 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Winner
+2021-06-02 11:37:01,877 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : Not known whether passed class name [ru.sgt1503.redroses_animation.DB.Entity.Follower] is safe
+2021-06-02 11:37:01,878 DEBUG org.hibernate.boot.internal.ClassLoaderAccessImpl : No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : ru.sgt1503.redroses_animation.DB.Entity.Follower
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: ru.sgt1503.redroses_animation.DB.Entity.Prize
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from prize where id =?
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select prize_.id, prize_.name_of_prize as name_of_2_2_, prize_.url_to_png as url_to_p3_2_ from prize prize_ where prize_.id=?
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into prize (name_of_prize, url_to_png, id) values (?, ?, ?)
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update prize set name_of_prize=?, url_to_png=? where id=?
+2021-06-02 11:37:01,895 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from prize where id=?
+2021-06-02 11:37:01,922 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4d9b8e81]
+2021-06-02 11:37:01,923 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : nameOfPrize
+2021-06-02 11:37:01,924 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : urlToPng
+2021-06-02 11:37:01,924 DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-06-02 11:37:01,932 DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-06-02 11:37:01,935 DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=ru.sgt1503.redroses_animation.DB.Entity.Prize)
+    - Returns
+       - EntityReturnImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.Prize, querySpaceUid=<gen:0>, path=ru.sgt1503.redroses_animation.DB.Entity.Prize)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.sgt1503.redroses_animation.DB.Entity.Prize)
+          - SQL table alias mapping - prize0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2021-06-02 11:37:01,937 DEBUG org.hibernate.loader.entity.plan.EntityLoader : Static select for entity ru.sgt1503.redroses_animation.DB.Entity.Prize [NONE]: select prize0_.id as id1_2_0_, prize0_.name_of_prize as name_of_2_2_0_, prize0_.url_to_png as url_to_p3_2_0_ from prize prize0_ where prize0_.id=?
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: ru.sgt1503.redroses_animation.DB.Entity.BotFollower
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from bot_follower where id =?
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select botfollowe_.id, botfollowe_.aboba_counter as aboba_co2_0_, botfollowe_.message_counter as message_3_0_, botfollowe_.steamid as steamid4_0_, botfollowe_.userid as userid5_0_, botfollowe_.username as username6_0_ from bot_follower botfollowe_ where botfollowe_.id=?
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into bot_follower (aboba_counter, message_counter, steamid, userid, username, id) values (?, ?, ?, ?, ?, ?)
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update bot_follower set aboba_counter=?, message_counter=?, steamid=?, userid=?, username=? where id=?
+2021-06-02 11:37:01,938 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from bot_follower where id=?
+2021-06-02 11:37:01,938 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@22ff41c4]
+2021-06-02 11:37:01,939 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : abobaCounter
+2021-06-02 11:37:01,939 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : messageCounter
+2021-06-02 11:37:01,939 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : steamID
+2021-06-02 11:37:01,939 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : userID
+2021-06-02 11:37:01,939 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : username
+2021-06-02 11:37:01,939 DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-06-02 11:37:01,939 DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-06-02 11:37:01,939 DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=ru.sgt1503.redroses_animation.DB.Entity.BotFollower)
+    - Returns
+       - EntityReturnImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.BotFollower, querySpaceUid=<gen:0>, path=ru.sgt1503.redroses_animation.DB.Entity.BotFollower)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.sgt1503.redroses_animation.DB.Entity.BotFollower)
+          - SQL table alias mapping - botfollowe0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+2021-06-02 11:37:01,940 DEBUG org.hibernate.loader.entity.plan.EntityLoader : Static select for entity ru.sgt1503.redroses_animation.DB.Entity.BotFollower [NONE]: select botfollowe0_.id as id1_0_0_, botfollowe0_.aboba_counter as aboba_co2_0_0_, botfollowe0_.message_counter as message_3_0_0_, botfollowe0_.steamid as steamid4_0_0_, botfollowe0_.userid as userid5_0_0_, botfollowe0_.username as username6_0_0_ from bot_follower botfollowe0_ where botfollowe0_.id=?
+2021-06-02 11:37:01,940 DEBUG org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: ru.sgt1503.redroses_animation.DB.Entity.Winner
+2021-06-02 11:37:01,940 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from winner where id =?
+2021-06-02 11:37:01,940 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select winner_.id, winner_.botfollower_username as botfollo5_3_, winner_.prize_name_of_prize as prize_na6_3_, winner_.prize_name as prize_na2_3_, winner_.url_to_png as url_to_p3_3_, winner_.username as username4_3_ from winner winner_ where winner_.id=?
+2021-06-02 11:37:01,940 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into winner (botfollower_username, prize_name_of_prize, prize_name, url_to_png, username, id) values (?, ?, ?, ?, ?, ?)
+2021-06-02 11:37:01,940 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update winner set botfollower_username=?, prize_name_of_prize=?, prize_name=?, url_to_png=?, username=? where id=?
+2021-06-02 11:37:01,941 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from winner where id=?
+2021-06-02 11:37:01,942 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18bd9634]
+2021-06-02 11:37:01,943 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower
+2021-06-02 11:37:01,947 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7b170463]
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower.abobaCounter
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower.messageCounter
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower.steamID
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower.userID
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : botFollower.username
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : prize
+2021-06-02 11:37:01,949 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@48941566]
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : prize.nameOfPrize
+2021-06-02 11:37:01,949 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : prize.urlToPng
+2021-06-02 11:37:01,950 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : prizeName
+2021-06-02 11:37:01,950 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : urlToPng
+2021-06-02 11:37:01,950 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : username
+2021-06-02 11:37:01,950 DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-06-02 11:37:01,950 DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-06-02 11:37:01,951 DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=ru.sgt1503.redroses_animation.DB.Entity.Winner)
+    - Returns
+       - EntityReturnImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.Winner, querySpaceUid=<gen:0>, path=ru.sgt1503.redroses_animation.DB.Entity.Winner)
+          - EntityAttributeFetchImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.BotFollower, querySpaceUid=<gen:1>, path=ru.sgt1503.redroses_animation.DB.Entity.Winner.botFollower)
+          - EntityAttributeFetchImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.Prize, querySpaceUid=<gen:2>, path=ru.sgt1503.redroses_animation.DB.Entity.Winner.prize)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.sgt1503.redroses_animation.DB.Entity.Winner)
+          - SQL table alias mapping - winner0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_3_0_}
+          - JOIN (JoinDefinedByMetadata(botFollower)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=ru.sgt1503.redroses_animation.DB.Entity.BotFollower)
+                - SQL table alias mapping - botfollowe1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+          - JOIN (JoinDefinedByMetadata(prize)) : <gen:0> -> <gen:2>
+             - EntityQuerySpaceImpl(uid=<gen:2>, entity=ru.sgt1503.redroses_animation.DB.Entity.Prize)
+                - SQL table alias mapping - prize2_
+                - alias suffix - 2_
+                - suffixed key columns - {id1_2_2_}
+
+2021-06-02 11:37:01,952 DEBUG org.hibernate.loader.entity.plan.EntityLoader : Static select for entity ru.sgt1503.redroses_animation.DB.Entity.Winner [NONE]: select winner0_.id as id1_3_0_, winner0_.botfollower_username as botfollo5_3_0_, winner0_.prize_name_of_prize as prize_na6_3_0_, winner0_.prize_name as prize_na2_3_0_, winner0_.url_to_png as url_to_p3_3_0_, winner0_.username as username4_3_0_, botfollowe1_.id as id1_0_1_, botfollowe1_.aboba_counter as aboba_co2_0_1_, botfollowe1_.message_counter as message_3_0_1_, botfollowe1_.steamid as steamid4_0_1_, botfollowe1_.userid as userid5_0_1_, botfollowe1_.username as username6_0_1_, prize2_.id as id1_2_2_, prize2_.name_of_prize as name_of_2_2_2_, prize2_.url_to_png as url_to_p3_2_2_ from winner winner0_ left outer join bot_follower botfollowe1_ on winner0_.botfollower_username=botfollowe1_.id left outer join prize prize2_ on winner0_.prize_name_of_prize=prize2_.id where winner0_.id=?
+2021-06-02 11:37:01,952 DEBUG org.hibernate.persister.entity.AbstractEntityPersister : Static SQL for entity: ru.sgt1503.redroses_animation.DB.Entity.Follower
+2021-06-02 11:37:01,952 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Version select: select id from follower where id =?
+2021-06-02 11:37:01,952 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Snapshot select: select follower_.id, follower_.aboba_counter as aboba_co2_1_, follower_.message_counter as message_3_1_, follower_.steamid as steamid4_1_, follower_.userid as userid5_1_, follower_.username as username6_1_ from follower follower_ where follower_.id=?
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Insert 0: insert into follower (aboba_counter, message_counter, steamid, userid, username, id) values (?, ?, ?, ?, ?, ?)
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Update 0: update follower set aboba_counter=?, message_counter=?, steamid=?, userid=?, username=? where id=?
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.entity.AbstractEntityPersister :  Delete 0: delete from follower where id=?
+2021-06-02 11:37:01,953 DEBUG org.hibernate.loader.plan.build.internal.spaces.QuerySpacesImpl : Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@53dc5b35]
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : abobaCounter
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : messageCounter
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : steamID
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : userID
+2021-06-02 11:37:01,953 DEBUG org.hibernate.persister.walking.spi.MetamodelGraphWalker : Visiting attribute path : username
+2021-06-02 11:37:01,953 DEBUG org.hibernate.loader.plan.build.internal.FetchStyleLoadPlanBuildingAssociationVisitationStrategy : Building LoadPlan...
+2021-06-02 11:37:01,953 DEBUG org.hibernate.loader.plan.exec.internal.LoadQueryJoinAndFetchProcessor : processing queryspace <gen:0>
+2021-06-02 11:37:01,954 DEBUG org.hibernate.loader.plan.build.spi.LoadPlanTreePrinter : LoadPlan(entity=ru.sgt1503.redroses_animation.DB.Entity.Follower)
+    - Returns
+       - EntityReturnImpl(entity=ru.sgt1503.redroses_animation.DB.Entity.Follower, querySpaceUid=<gen:0>, path=ru.sgt1503.redroses_animation.DB.Entity.Follower)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=ru.sgt1503.redroses_animation.DB.Entity.Follower)
+          - SQL table alias mapping - follower0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+
+2021-06-02 11:37:01,954 DEBUG org.hibernate.loader.entity.plan.EntityLoader : Static select for entity ru.sgt1503.redroses_animation.DB.Entity.Follower [NONE]: select follower0_.id as id1_1_0_, follower0_.aboba_counter as aboba_co2_1_0_, follower0_.message_counter as message_3_1_0_, follower0_.steamid as steamid4_1_0_, follower0_.userid as userid5_1_0_, follower0_.username as username6_1_0_ from follower follower0_ where follower0_.id=?
+2021-06-02 11:37:02,034 DEBUG org.hibernate.mapping.Table : No alter strings for table : bot_follower
+2021-06-02 11:37:02,034 DEBUG org.hibernate.mapping.Table : No alter strings for table : follower
+2021-06-02 11:37:02,034 DEBUG org.hibernate.mapping.Table : No alter strings for table : prize
+2021-06-02 11:37:02,035 DEBUG org.hibernate.mapping.Table : No alter strings for table : winner
+2021-06-02 11:37:02,078 INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-02 11:37:02,079 DEBUG org.hibernate.query.spi.NamedQueryRepository : Checking 0 named HQL queries
+2021-06-02 11:37:02,080 DEBUG org.hibernate.query.spi.NamedQueryRepository : Checking 0 named SQL queries
+2021-06-02 11:37:02,090 DEBUG org.hibernate.internal.SessionFactoryRegistry : Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@c20bdae
+2021-06-02 11:37:02,090 DEBUG org.hibernate.internal.SessionFactoryRegistry : Registering SessionFactory: 9c5cf4bb-faa0-45c0-8a66-978543f01849 (<unnamed>)
+2021-06-02 11:37:02,090 DEBUG org.hibernate.internal.SessionFactoryRegistry : Not binding SessionFactory to JNDI, no JNDI name configured
+2021-06-02 11:37:02,092 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-02 11:37:02,365 DEBUG org.hibernate.stat.internal.StatisticsInitiator : Statistics initialized [enabled=false]
+2021-06-02 11:37:02,546 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,596 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,598 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,664 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,666 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,668 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,701 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:02,732 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:03,477 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-02 11:37:03,610 INFO  org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2021-06-02 11:37:03,801 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2021-06-02 11:37:03,803 DEBUG org.hibernate.engine.transaction.internal.TransactionImpl : begin
+2021-06-02 11:37:03,814 DEBUG org.hibernate.query.criteria.internal.CriteriaQueryImpl : Rendered criteria query -> select generatedAlias0 from BotFollower as generatedAlias0
+2021-06-02 11:37:03,833 DEBUG org.hibernate.hql.internal.QueryTranslatorFactoryInitiator : QueryTranslatorFactory: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@3a5ab3c7
+2021-06-02 11:37:03,879 DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl : parse() - HQL: select generatedAlias0 from ru.sgt1503.redroses_animation.DB.Entity.BotFollower as generatedAlias0
+2021-06-02 11:37:03,900 DEBUG org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-06-02 11:37:03,918 DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    \-[SELECT_FROM] Node: 'SELECT_FROM'
+       +-[FROM] Node: 'from'
+       |  \-[RANGE] Node: 'RANGE'
+       |     +-[DOT] Node: '.'
+       |     |  +-[DOT] Node: '.'
+       |     |  |  +-[DOT] Node: '.'
+       |     |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  +-[DOT] Node: '.'
+       |     |  |  |  |  |  +-[IDENT] Node: 'ru'
+       |     |  |  |  |  |  \-[IDENT] Node: 'sgt1503'
+       |     |  |  |  |  \-[IDENT] Node: 'redroses_animation'
+       |     |  |  |  \-[IDENT] Node: 'DB'
+       |     |  |  \-[IDENT] Node: 'Entity'
+       |     |  \-[IDENT] Node: 'BotFollower'
+       |     \-[ALIAS] Node: 'generatedAlias0'
+       \-[SELECT] Node: 'select'
+          \-[IDENT] Node: 'generatedAlias0'
+
+2021-06-02 11:37:03,941 DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select << begin [level=1, statement=select]
+2021-06-02 11:37:03,958 DEBUG org.hibernate.hql.internal.ast.tree.FromElement : FromClause{level=1} : ru.sgt1503.redroses_animation.DB.Entity.BotFollower (generatedAlias0) -> botfollowe0_
+2021-06-02 11:37:03,959 DEBUG org.hibernate.hql.internal.ast.tree.FromReferenceNode : Resolved : generatedAlias0 -> botfollowe0_.id
+2021-06-02 11:37:03,961 DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select : finishing up [level=1, statement=select]
+2021-06-02 11:37:03,961 DEBUG org.hibernate.hql.internal.ast.HqlSqlWalker : processQuery() :  ( SELECT ( {select clause} botfollowe0_.id ) ( FromClause{level=1} bot_follower botfollowe0_ ) )
+2021-06-02 11:37:03,967 DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor : Tables referenced from query nodes:
+ \-QueryNode
+    +-SelectClause
+    | referencedTables(entity BotFollower): [bot_follower]
+    |  +-IdentNode
+    |  | persister: SingleTableEntityPersister(ru.sgt1503.redroses_animation.DB.Entity.BotFollower)
+    |  | originalText: generatedAlias0
+    |  \-SqlFragment
+    \-FromClause
+       \-FromElement
+
+2021-06-02 11:37:03,970 DEBUG org.hibernate.hql.internal.ast.util.JoinProcessor : Using FROM fragment [bot_follower botfollowe0_]
+2021-06-02 11:37:03,970 DEBUG org.hibernate.hql.internal.antlr.HqlSqlBaseWalker : select >> end [level=1, statement=select]
+2021-06-02 11:37:03,971 DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl : --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (bot_follower)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'botfollowe0_.id as id1_0_' {alias=generatedAlias0, className=ru.sgt1503.redroses_animation.DB.Entity.BotFollower, tableAlias=botfollowe0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'botfollowe0_.aboba_counter as aboba_co2_0_, botfollowe0_.message_counter as message_3_0_, botfollowe0_.steamid as steamid4_0_, botfollowe0_.userid as userid5_0_, botfollowe0_.username as username6_0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[generatedAlias0], fromElementByTableAlias=[botfollowe0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'bot_follower botfollowe0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=generatedAlias0,role=null,tableName=bot_follower,tableAlias=botfollowe0_,origin=null,columns={,className=ru.sgt1503.redroses_animation.DB.Entity.BotFollower}}
+
+2021-06-02 11:37:03,971 DEBUG org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-06-02 11:37:03,978 DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl : HQL: select generatedAlias0 from ru.sgt1503.redroses_animation.DB.Entity.BotFollower as generatedAlias0
+2021-06-02 11:37:03,978 DEBUG org.hibernate.hql.internal.ast.QueryTranslatorImpl : SQL: select botfollowe0_.id as id1_0_, botfollowe0_.aboba_counter as aboba_co2_0_, botfollowe0_.message_counter as message_3_0_, botfollowe0_.steamid as steamid4_0_, botfollowe0_.userid as userid5_0_, botfollowe0_.username as username6_0_ from bot_follower botfollowe0_
+2021-06-02 11:37:03,978 DEBUG org.hibernate.hql.internal.ast.ErrorTracker : throwQueryException() : no errors
+2021-06-02 11:37:03,989 INFO  ru.sgt1503.redroses_animation.RedrosesAnimationApplicationTests : Started RedrosesAnimationApplicationTests in 6.071 seconds (JVM running for 7.673)
+2021-06-02 11:37:04,063 DEBUG org.hibernate.SQL : select botfollowe0_.id as id1_0_, botfollowe0_.aboba_counter as aboba_co2_0_, botfollowe0_.message_counter as message_3_0_, botfollowe0_.steamid as steamid4_0_, botfollowe0_.userid as userid5_0_, botfollowe0_.username as username6_0_ from bot_follower botfollowe0_
+Hibernate: select botfollowe0_.id as id1_0_, botfollowe0_.aboba_counter as aboba_co2_0_, botfollowe0_.message_counter as message_3_0_, botfollowe0_.steamid as steamid4_0_, botfollowe0_.userid as userid5_0_, botfollowe0_.username as username6_0_ from bot_follower botfollowe0_
+2021-06-02 11:37:04,095 DEBUG org.hibernate.loader.Loader : Result set row: 0
+2021-06-02 11:37:04,098 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#1]
+2021-06-02 11:37:04,106 DEBUG org.hibernate.loader.Loader : Result set row: 1
+2021-06-02 11:37:04,107 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#2]
+2021-06-02 11:37:04,109 DEBUG org.hibernate.loader.Loader : Result set row: 2
+2021-06-02 11:37:04,110 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#3]
+2021-06-02 11:37:04,113 DEBUG org.hibernate.loader.Loader : Result set row: 3
+2021-06-02 11:37:04,113 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#4]
+2021-06-02 11:37:04,114 DEBUG org.hibernate.loader.Loader : Result set row: 4
+2021-06-02 11:37:04,121 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#5]
+2021-06-02 11:37:04,121 DEBUG org.hibernate.loader.Loader : Result set row: 5
+2021-06-02 11:37:04,121 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#6]
+2021-06-02 11:37:04,121 DEBUG org.hibernate.loader.Loader : Result set row: 6
+2021-06-02 11:37:04,121 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#7]
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result set row: 7
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#8]
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result set row: 8
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#9]
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result set row: 9
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#10]
+2021-06-02 11:37:04,122 DEBUG org.hibernate.loader.Loader : Result set row: 10
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#11]
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result set row: 11
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#12]
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result set row: 12
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#13]
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result set row: 13
+2021-06-02 11:37:04,123 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#14]
+2021-06-02 11:37:04,124 DEBUG org.hibernate.loader.Loader : Result set row: 14
+2021-06-02 11:37:04,124 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#15]
+2021-06-02 11:37:04,124 DEBUG org.hibernate.loader.Loader : Result set row: 15
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#16]
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result set row: 16
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#17]
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result set row: 17
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#18]
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result set row: 18
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#19]
+2021-06-02 11:37:04,125 DEBUG org.hibernate.loader.Loader : Result set row: 19
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#20]
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result set row: 20
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#21]
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result set row: 21
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#22]
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result set row: 22
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#23]
+2021-06-02 11:37:04,126 DEBUG org.hibernate.loader.Loader : Result set row: 23
+2021-06-02 11:37:04,127 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#24]
+2021-06-02 11:37:04,127 DEBUG org.hibernate.loader.Loader : Result set row: 24
+2021-06-02 11:37:04,127 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#25]
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result set row: 25
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#26]
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result set row: 26
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#27]
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result set row: 27
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#28]
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result set row: 28
+2021-06-02 11:37:04,133 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#29]
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result set row: 29
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#30]
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result set row: 30
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#31]
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result set row: 31
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#32]
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result set row: 32
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#33]
+2021-06-02 11:37:04,134 DEBUG org.hibernate.loader.Loader : Result set row: 33
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#34]
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result set row: 34
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#35]
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result set row: 35
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#36]
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result set row: 36
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#37]
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result set row: 37
+2021-06-02 11:37:04,135 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#38]
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result set row: 38
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#39]
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result set row: 39
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#40]
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result set row: 40
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#41]
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result set row: 41
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#42]
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result set row: 42
+2021-06-02 11:37:04,136 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#43]
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result set row: 43
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#44]
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result set row: 44
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#45]
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result set row: 45
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#46]
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result set row: 46
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#47]
+2021-06-02 11:37:04,137 DEBUG org.hibernate.loader.Loader : Result set row: 47
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#48]
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result set row: 48
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#49]
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result set row: 49
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#50]
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result set row: 50
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#51]
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result set row: 51
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#52]
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result set row: 52
+2021-06-02 11:37:04,138 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#53]
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result set row: 53
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#54]
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result set row: 54
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#55]
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result set row: 55
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#56]
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result set row: 56
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#57]
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result set row: 57
+2021-06-02 11:37:04,139 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#58]
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result set row: 58
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#59]
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result set row: 59
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#60]
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result set row: 60
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#61]
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result set row: 61
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#62]
+2021-06-02 11:37:04,140 DEBUG org.hibernate.loader.Loader : Result set row: 62
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#63]
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result set row: 63
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#64]
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result set row: 64
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#65]
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result set row: 65
+2021-06-02 11:37:04,141 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#66]
+2021-06-02 11:37:04,142 DEBUG org.hibernate.loader.Loader : Result set row: 66
+2021-06-02 11:37:04,142 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#67]
+2021-06-02 11:37:04,142 DEBUG org.hibernate.loader.Loader : Result set row: 67
+2021-06-02 11:37:04,142 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#68]
+2021-06-02 11:37:04,147 DEBUG org.hibernate.loader.Loader : Result set row: 68
+2021-06-02 11:37:04,147 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#69]
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result set row: 69
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#70]
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result set row: 70
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#71]
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result set row: 71
+2021-06-02 11:37:04,148 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#72]
+2021-06-02 11:37:04,149 DEBUG org.hibernate.loader.Loader : Result set row: 72
+2021-06-02 11:37:04,150 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#73]
+2021-06-02 11:37:04,151 DEBUG org.hibernate.loader.Loader : Result set row: 73
+2021-06-02 11:37:04,152 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#74]
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result set row: 74
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#75]
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result set row: 75
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#76]
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result set row: 76
+2021-06-02 11:37:04,153 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#77]
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result set row: 77
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#78]
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result set row: 78
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#79]
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result set row: 79
+2021-06-02 11:37:04,154 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#80]
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result set row: 80
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#81]
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result set row: 81
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#82]
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result set row: 82
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#83]
+2021-06-02 11:37:04,155 DEBUG org.hibernate.loader.Loader : Result set row: 83
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#84]
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result set row: 84
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#85]
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result set row: 85
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#86]
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result set row: 86
+2021-06-02 11:37:04,156 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#87]
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result set row: 87
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#88]
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result set row: 88
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#89]
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result set row: 89
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#90]
+2021-06-02 11:37:04,157 DEBUG org.hibernate.loader.Loader : Result set row: 90
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#91]
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result set row: 91
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#92]
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result set row: 92
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#93]
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result set row: 93
+2021-06-02 11:37:04,158 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#94]
+2021-06-02 11:37:04,159 DEBUG org.hibernate.loader.Loader : Result set row: 94
+2021-06-02 11:37:04,159 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#95]
+2021-06-02 11:37:04,159 DEBUG org.hibernate.loader.Loader : Result set row: 95
+2021-06-02 11:37:04,167 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#96]
+2021-06-02 11:37:04,167 DEBUG org.hibernate.loader.Loader : Result set row: 96
+2021-06-02 11:37:04,167 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#97]
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result set row: 97
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#98]
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result set row: 98
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#99]
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result set row: 99
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#100]
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result set row: 100
+2021-06-02 11:37:04,168 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#101]
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result set row: 101
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#102]
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result set row: 102
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#103]
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result set row: 103
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#104]
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result set row: 104
+2021-06-02 11:37:04,169 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#105]
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result set row: 105
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#106]
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result set row: 106
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#107]
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result set row: 107
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#108]
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result set row: 108
+2021-06-02 11:37:04,170 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#109]
+2021-06-02 11:37:04,173 DEBUG org.hibernate.loader.Loader : Result set row: 109
+2021-06-02 11:37:04,173 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#110]
+2021-06-02 11:37:04,173 DEBUG org.hibernate.loader.Loader : Result set row: 110
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#111]
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result set row: 111
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#112]
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result set row: 112
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#113]
+2021-06-02 11:37:04,174 DEBUG org.hibernate.loader.Loader : Result set row: 113
+2021-06-02 11:37:04,175 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#114]
+2021-06-02 11:37:04,175 DEBUG org.hibernate.loader.Loader : Result set row: 114
+2021-06-02 11:37:04,175 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#115]
+2021-06-02 11:37:04,175 DEBUG org.hibernate.loader.Loader : Result set row: 115
+2021-06-02 11:37:04,175 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#116]
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result set row: 116
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#117]
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result set row: 117
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#118]
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result set row: 118
+2021-06-02 11:37:04,176 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#119]
+2021-06-02 11:37:04,177 DEBUG org.hibernate.loader.Loader : Result set row: 119
+2021-06-02 11:37:04,177 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#120]
+2021-06-02 11:37:04,177 DEBUG org.hibernate.loader.Loader : Result set row: 120
+2021-06-02 11:37:04,177 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#121]
+2021-06-02 11:37:04,179 DEBUG org.hibernate.loader.Loader : Result set row: 121
+2021-06-02 11:37:04,179 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#122]
+2021-06-02 11:37:04,179 DEBUG org.hibernate.loader.Loader : Result set row: 122
+2021-06-02 11:37:04,179 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#123]
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result set row: 123
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#124]
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result set row: 124
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#125]
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result set row: 125
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#126]
+2021-06-02 11:37:04,180 DEBUG org.hibernate.loader.Loader : Result set row: 126
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#127]
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result set row: 127
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#128]
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result set row: 128
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#129]
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result set row: 129
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#130]
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result set row: 130
+2021-06-02 11:37:04,181 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#131]
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result set row: 131
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#132]
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result set row: 132
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#133]
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result set row: 133
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#134]
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result set row: 134
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#135]
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result set row: 135
+2021-06-02 11:37:04,182 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#136]
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result set row: 136
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#137]
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result set row: 137
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#138]
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result set row: 138
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#139]
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result set row: 139
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#140]
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result set row: 140
+2021-06-02 11:37:04,183 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#141]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 141
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#142]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 142
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#143]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 143
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#144]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 144
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#145]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 145
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#146]
+2021-06-02 11:37:04,184 DEBUG org.hibernate.loader.Loader : Result set row: 146
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#147]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 147
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#148]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 148
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#149]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 149
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#150]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 150
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#151]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 151
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#152]
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result set row: 152
+2021-06-02 11:37:04,185 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#153]
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result set row: 153
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#154]
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result set row: 154
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#155]
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result set row: 155
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#156]
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result set row: 156
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#157]
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result set row: 157
+2021-06-02 11:37:04,186 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#158]
+2021-06-02 11:37:04,187 DEBUG org.hibernate.loader.Loader : Result set row: 158
+2021-06-02 11:37:04,187 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#159]
+2021-06-02 11:37:04,187 DEBUG org.hibernate.loader.Loader : Result set row: 159
+2021-06-02 11:37:04,187 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#160]
+2021-06-02 11:37:04,193 DEBUG org.hibernate.loader.Loader : Result set row: 160
+2021-06-02 11:37:04,193 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#161]
+2021-06-02 11:37:04,193 DEBUG org.hibernate.loader.Loader : Result set row: 161
+2021-06-02 11:37:04,193 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#162]
+2021-06-02 11:37:04,194 DEBUG org.hibernate.loader.Loader : Result set row: 162
+2021-06-02 11:37:04,199 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#163]
+2021-06-02 11:37:04,199 DEBUG org.hibernate.loader.Loader : Result set row: 163
+2021-06-02 11:37:04,199 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#164]
+2021-06-02 11:37:04,199 DEBUG org.hibernate.loader.Loader : Result set row: 164
+2021-06-02 11:37:04,199 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#165]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 165
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#166]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 166
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#167]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 167
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#168]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 168
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#169]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 169
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#170]
+2021-06-02 11:37:04,200 DEBUG org.hibernate.loader.Loader : Result set row: 170
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#171]
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result set row: 171
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#172]
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result set row: 172
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#173]
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result set row: 173
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#174]
+2021-06-02 11:37:04,201 DEBUG org.hibernate.loader.Loader : Result set row: 174
+2021-06-02 11:37:04,202 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#175]
+2021-06-02 11:37:04,202 DEBUG org.hibernate.loader.Loader : Result set row: 175
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#176]
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result set row: 176
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#177]
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result set row: 177
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#178]
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result set row: 178
+2021-06-02 11:37:04,203 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#179]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 179
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#180]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 180
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#181]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 181
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#182]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 182
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#183]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 183
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#184]
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result set row: 184
+2021-06-02 11:37:04,204 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#185]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 185
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#186]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 186
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#187]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 187
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#188]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 188
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#189]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 189
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#190]
+2021-06-02 11:37:04,205 DEBUG org.hibernate.loader.Loader : Result set row: 190
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#191]
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result set row: 191
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#192]
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result set row: 192
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#193]
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result set row: 193
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#194]
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result set row: 194
+2021-06-02 11:37:04,206 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#195]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 195
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#196]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 196
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#197]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 197
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#198]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 198
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#199]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 199
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#200]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 200
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#201]
+2021-06-02 11:37:04,207 DEBUG org.hibernate.loader.Loader : Result set row: 201
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#202]
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result set row: 202
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#203]
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result set row: 203
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#204]
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result set row: 204
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#205]
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result set row: 205
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#206]
+2021-06-02 11:37:04,208 DEBUG org.hibernate.loader.Loader : Result set row: 206
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#207]
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result set row: 207
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#208]
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result set row: 208
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#209]
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result set row: 209
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#210]
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result set row: 210
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#211]
+2021-06-02 11:37:04,209 DEBUG org.hibernate.loader.Loader : Result set row: 211
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#212]
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result set row: 212
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#213]
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result set row: 213
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#214]
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result set row: 214
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#215]
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result set row: 215
+2021-06-02 11:37:04,210 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#216]
+2021-06-02 11:37:04,211 DEBUG org.hibernate.loader.Loader : Result set row: 216
+2021-06-02 11:37:04,211 DEBUG org.hibernate.loader.Loader : Result row: EntityKey[ru.sgt1503.redroses_animation.DB.Entity.BotFollower#217]
+2021-06-02 11:37:04,211 DEBUG org.hibernate.loader.Loader : Result set row: 217
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
