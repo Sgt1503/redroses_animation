@@ -6,7 +6,7 @@ twitch4j:
     secret: "teu4o32pxj4nvorj8bzups98s6o7qz"
 
 server:
-  adress: 178.154.224.215
+  adress: 35.192.165.21
   port: 8082
 spring:
   profiles:
